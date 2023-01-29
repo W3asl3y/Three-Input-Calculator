@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+input {
+    margin-left: 10px;
+}
+div {
+    margin-top: 20px;
+}
