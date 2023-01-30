@@ -1,20 +1,20 @@
 //funcion to calculate the results
 function calculate() {
-    const inputOne = parseInt(document.getElementById("inputOne"));
-    const inputTwo = parseInt(document.getElementById("inputTwo"));
-    const op = document.getElementById("op");
+    const inputOne = parseInt(document.getElementById("inputOne").value);
+    const inputTwo = parseInt(document.getElementById("inputTwo").value);
+    const op = document.getElementById("op").value;
     let result;
 
     switch(op) {
         case "+": 
             result = inputOne + inputTwo ;
             console.log("You calculated " + result);
-            document.getElementById("answer").innerHTML = "You calculated  " + inputOne + "*" + inputTwo + "=" + result ;
+            document.getElementById("answer").innerHTML = "You calculated  " + inputOne + "+" + inputTwo + "=" + result ;
         break;
         case "-": 
             result = inputOne - inputTwo ;
             console.log("You calculated " + result);
-            document.getElementById("answer").innerHTML = "You calculated  " + inputOne + "*" + inputTwo + "=" + result ;
+            document.getElementById("answer").innerHTML = "You calculated  " + inputOne + "-" + inputTwo + "=" + result ;
         break;
         case "*": 
             result = inputOne - inputTwo ;
@@ -24,7 +24,7 @@ function calculate() {
         case "/":
             result = inputOne + inputTwo ;
             console.log("You calculated " + result);
-            document.getElementById("answer").innerHTML = "You calculated  " + inputOne + "*" + inputTwo + "=" + result ;
+            document.getElementById("answer").innerHTML = "You calculated  " + inputOne + "/" + inputTwo + "=" + result ;
         break;
         default:
             console.log("Invalid operator")

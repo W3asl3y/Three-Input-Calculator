@@ -1,9 +1,9 @@
 //funcion to calculate the results
 function calculate() {
-    const inputOne = parseInt(document.getElementById("inputOne"));
-    const inputTwo = parseInt(document.getElementById("inputTwo"));
-    let op = document.getElementById("op");
-    let result;
+    const inputOne = parseInt(document.getElementById("inputOne").value);
+    const inputTwo = parseInt(document.getElementById("inputTwo").value);
+    let op = document.getElementById("op").value;
+    let result ;
     
     if (op === "+" || op === "-" || op === "*" || op === "/" ) {
         if (op === "+") {
